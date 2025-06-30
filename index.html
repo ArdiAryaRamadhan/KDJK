@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Ardi</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      header {
+        background: #333;
+        color: #fff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #77aaff 3px solid;
+      }
+
+      header h1 {
+        margin: 0;
+        padding-bottom: 10px;
+      }
+
+      #profile {
+        padding: 40px 0;
+        background: #fff;
+        margin-top: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        flex-wrap: wrap;
+      }
+
+      #profile .profile-content {
+        flex: 1;
+        padding: 0 20px;
+        max-width: 60%;
+      }
+
+      #profile .profile-image {
+        flex-shrink: 0;
+        padding: 0 20px;
+      }
+
+      #profile img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #77aaff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+
+      #profile h2 {
+        color: #333;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      #profile p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: #fff;
+        margin-top: 30px;
+        border-top: #77aaff 3px solid;
+      }
+
+      /* Responsif */
+      @media (max-width: 768px) {
+        .container {
+          width: 95%;
+        }
+
+        #profile {
+          flex-direction: column-reverse;
+          text-align: center;
+        }
+
+        #profile .profile-content,
+        #profile .profile-image {
+          max-width: 100%;
+          padding: 0 10px;
+          margin-bottom: 20px;
+        }
+
+        #profile img {
+          width: 180px;
+          height: 180px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Profil Ardi</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="profile">
+        <div class="profile-content">
+          <h2>Halo, Saya Ardi Arya Ramadhan</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="profile-image">
+          <img
+            src="https://robohash.org/anonim.png?size=250x250"
+            alt="Gambar Anonim"
+          />
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Ardi.</p>
+    </footer>
+  </body>
+</html>
